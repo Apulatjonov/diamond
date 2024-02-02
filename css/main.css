@@ -1,1 +1,253 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+html, body, h1, h2, h3, h4, h5, h6, p, ul, li, a {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+/* inter-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/inter-v13-latin-regular.woff2") format("woff2"), url("../fonts/inter-v13-latin-regular.ttf") format("truetype"); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+/* inter-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/inter-v13-latin-500.woff2") format("woff2"), url("../fonts/inter-v13-latin-500.ttf") format("truetype"); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+/* inter-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/inter-v13-latin-600.woff2") format("woff2"), url("../fonts/inter-v13-latin-600.ttf") format("truetype"); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+/* inter-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/inter-v13-latin-700.woff2") format("woff2"), url("../fonts/inter-v13-latin-700.ttf") format("truetype"); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+/* inter-800 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/inter-v13-latin-800.woff2") format("woff2"), url("../fonts/inter-v13-latin-800.ttf") format("truetype"); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+/* roboto-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-v30-latin-regular.woff2") format("woff2"), url("../fonts/roboto-v30-latin-regular.ttf") format("truetype"); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+html {
+  scroll-behavior: smooth;
+}
+
+input, button {
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.container {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.header__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+.header__btn {
+  border: 2px solid #1D78BC;
+  padding: 8px 48px;
+  border-radius: 5px;
+  background-color: #1D78BC;
+  color: #fff;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.header__btn:hover {
+  opacity: 0.8;
+}
+.header__btn:active {
+  background-color: transparent;
+  color: #1D78BC;
+}
+.header__icon-img {
+  width: 20px;
+  height: 20px;
+}
+.header__item-link {
+  font-family: Inter;
+  font-size: 16px;
+  color: #333;
+  transition: all 0.3s ease;
+}
+.header__item-link:hover {
+  opacity: 0.6;
+}
+.header__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 400px;
+  width: 100%;
+}
+.header__u-body {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(51, 51, 51, 0.4392156863);
+}
+.header__u-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.header__upper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.062745098);
+}
+
+.hero {
+  background-image: url("../../img/hero-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 143px;
+  padding-bottom: 200px;
+}
+.hero__body {
+  position: relative;
+  font-family: Inter;
+  font-size: 16px;
+  color: #fff;
+  max-width: 400px;
+  width: 100%;
+  z-index: 10;
+  margin-bottom: 20px;
+}
+.hero__body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: calc(100% - 400px);
+  width: 9999px;
+  height: 100%;
+  background-color: #2847A3;
+  z-index: -1;
+}
+.hero__btn {
+  padding: 15px 30px;
+  border-radius: 10px;
+  background-color: #fff;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 16px;
+  color: #1E1670;
+}
+.hero__btn-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.hero__header {
+  position: relative;
+  font-family: Inter;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 70px;
+  color: #fff;
+  width: 100%;
+  z-index: 10;
+  margin-bottom: 32px;
+}
+.hero__header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: calc(100% - 530px);
+  width: 9999px;
+  height: 100%;
+  background-color: #1D78BC;
+  z-index: -1;
+}
+
+.about {
+  margin-top: 40px;
+}
+.about__body {
+  font-family: roboto;
+  font-size: 18px;
+  margin-bottom: 36px;
+}
+.about__btn {
+  padding: 15px 30px;
+  border: 2px solid #1D78BC;
+  border-radius: 10px;
+  font-family: Inter;
+  font-size: 16px;
+  color: #1D78BC;
+}
+.about__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.about__header {
+  font-family: Roboto;
+  font-size: 56px;
+  margin-bottom: 60px;
+}
+.about__icon {
+  margin-left: 10px;
+}
+.about__img {
+  max-width: 600px;
+  width: 100%;
+}
+.about__wrapper {
+  max-width: 565px;
+  width: 100%;
+}/*# sourceMappingURL=main.css.map */
