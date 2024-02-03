@@ -1,0 +1,42 @@
+.partner {
+    margin-top: 55px;
+    margin-bottom: 85px;
+  &__body {
+    font-family: Inter;
+    font-size: 20px;
+  }
+  &__header {
+    font-family: Inter;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 60px;
+    text-align: center;
+    color: #1D78BC;
+  }
+  &__img-wrapper {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+  }
+  &__left-header {
+    font-family: Inter;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+  &__left-wrapper {
+    max-width: 545px;
+    width: 100%;
+  }
+  &__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  }
+
+  &__img {
+    padding: 20px;
+  }
+}

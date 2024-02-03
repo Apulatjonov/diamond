@@ -12,6 +12,11 @@
     font-family: Inter;
     font-size: 16px;
     color: #1D78BC;
+    transition: all 0.3s ease;
+
+    &:hover {
+      opacity: 0.6;;
+    }
   }
   &__container {
     display: flex;
@@ -27,7 +32,7 @@
     margin-left: 10px;
   }
   &__img {
-    max-width: 600px;
+    max-width: 500px;
     width: 100%;
   }
   &__wrapper {

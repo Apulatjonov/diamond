@@ -1,0 +1,46 @@
+.ribbon {
+    margin-top: 35px;
+    background-color: #1D78BC;
+  &__body {
+    padding-top: 63px;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    position: relative;
+    &::before {
+        position: absolute;
+        content: "";
+        display: inline-block;
+        width: 44px;
+        height: 44px;
+        left: 50%;
+        transform: translate(-50%);
+        top: 0;
+        background-image: url('../../img/t-icon.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+
+    &:nth-child(2)::before {
+        width: 68px;
+        height: 68px;
+        top: calc(0% - 5px);
+        background-image: url('../../img/trucl-icon.svg');
+    }
+
+    &:nth-child(3)::before {
+        width: 37px;
+        height: 45px;
+        background-image: url('../../img/g-icon.svg');
+    }
+  }
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 46px;
+    padding-bottom: 40px;
+  }
+}
