@@ -1,0 +1,38 @@
+.partner {
+  padding: 50px 0;
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 20px; // Space between images
+  }
+
+  &__img-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; // Space between images
+  }
+
+  &__img {
+    object-fit: contain; // Adjust if needed (contain, cover, etc.)
+    border-radius: 8px;
+    max-width: 200px; // Optional: Add rounded corners to images
+
+    @media (max-width: 768px) {
+      max-width: 120px; // Adjust size for smaller screens
+    }
+
+    @media (max-width: 480px) {
+      max-width: 100px; // Further adjust size for very small screens
+    }
+  }
+}

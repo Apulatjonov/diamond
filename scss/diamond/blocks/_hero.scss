@@ -1,0 +1,143 @@
+.hero {
+  background-image: url("../../img/hero-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 143px;
+  padding-bottom: 200px;
+  position: relative;
+
+  &__body {
+    position: relative;
+    font-family: Inter;
+    font-size: 16px;
+    color: #fff;
+    max-width: 400px;
+    width: 100%;
+    z-index: 10;
+    margin-bottom: 20px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: calc(100% - 400px);
+      width: 9999px;
+      height: 100%;
+      background-color: #2847a3;
+      z-index: -1;
+    }
+  }
+
+  &__btn {
+    padding: 15px 30px;
+    border-radius: 10px;
+    background-color: #fff;
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 16px;
+    color: #1e1670;
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  &__btn-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  &__header {
+    position: relative;
+    font-family: Inter;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 70px;
+    color: #fff;
+    width: 100%;
+    z-index: 10;
+    margin-bottom: 32px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: calc(100% - 530px);
+      width: 9999px;
+      height: 100%;
+      background-color: #1d78bc;
+      z-index: -1;
+    }
+  }
+
+  @media (max-width: 768px) {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5); // Black overlay with 50% opacity
+    }
+    &__container {
+      z-index: 200;
+    }
+    padding-top: 80px;
+    padding-bottom: 100px;
+
+    &__header {
+      font-size: 30px;
+      line-height: 45px;
+      margin-bottom: 20px;
+      &::before {
+        display: none;
+      }
+    }
+
+    &__body {
+      font-size: 15px;
+      &::before {
+        display: none;
+      }
+    }
+
+    &__btn {
+      padding: 10px 20px;
+      font-size: 12px;
+      z-index: 200;
+    }
+
+    &__btn-wrapper {
+      // flex-direction: column;
+      gap: 10px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    padding-top: 60px;
+    padding-bottom: 80px;
+
+    &__header {
+      font-size: 30px;
+      line-height: 35px;
+      margin-bottom: 20px;
+      &::before {
+        display: none;
+      }
+    }
+
+    &__body {
+      font-size: 13px;
+      max-width: 240px;
+      &::before {
+        display: none;
+      }
+    }
+
+    &__btn {
+      padding: 8px 15px;
+      font-size: 13px;
+    }
+  }
+}

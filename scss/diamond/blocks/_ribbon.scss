@@ -1,0 +1,100 @@
+.ribbon {
+  margin-top: 35px;
+  background-color: #1d78bc;
+
+  &__body {
+    padding-top: 63px;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    position: relative;
+    text-align: center;
+
+    &::before {
+      position: absolute;
+      content: "";
+      display: inline-block;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 0;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+
+    &:nth-child(1)::before {
+      width: 44px;
+      height: 44px;
+      background-image: url("../../img/t-icon.svg");
+    }
+
+    &:nth-child(2)::before {
+      width: 68px;
+      height: 68px;
+      top: calc(0% - 5px);
+      background-image: url("../../img/trucl-icon.svg");
+    }
+
+    &:nth-child(3)::before {
+      width: 37px;
+      height: 45px;
+      background-image: url("../../img/g-icon.svg");
+    }
+
+    @media (max-width: 768px) {
+      font-size: 20px;
+      padding-top: 50px;
+      margin-bottom: 25px;
+
+      &:nth-child(1)::before {
+        width: 36px;
+        height: 36px;
+      }
+
+      &:nth-child(2)::before {
+        width: 56px;
+        height: 56px;
+      }
+
+      &:nth-child(3)::before {
+        width: 30px;
+        height: 35px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      font-size: 16px;
+      padding-top: 40px;
+
+      &:nth-child(1)::before {
+        width: 28px;
+        height: 28px;
+      }
+
+      &:nth-child(2)::before {
+        width: 44px;
+        height: 44px;
+      }
+
+      &:nth-child(3)::before {
+        width: 24px;
+        height: 30px;
+      }
+    }
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 46px;
+    padding-bottom: 40px;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+  }
+}
