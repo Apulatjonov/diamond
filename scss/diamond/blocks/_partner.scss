@@ -11,15 +11,15 @@
   &__wrapper {
     display: flex;
     justify-content: center;
-    gap: 20px; // Space between images
+    width: 100%;
   }
 
   &__img-wrapper {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
-    gap: 20px; // Space between images
+    justify-content: space-between;
   }
 
   &__img {

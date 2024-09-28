@@ -1,20 +1,36 @@
-html, body, h1, h2 ,h3, h4, h5, h6, p ,ul, li, a {
-    margin: 0;
-    padding: 0;
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+a {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: #fff;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
+  color: #6c757d;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 img {
-    vertical-align: middle;
+  vertical-align: middle;
 }
 
 body {
-    font-family: sans-serif;
+  font-family: sans-serif;
 }

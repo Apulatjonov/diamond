@@ -14,6 +14,7 @@
     // align-items: center;
     text-align: center;
     margin-bottom: 40px;
+    width: 100%;
 
     @media (min-width: 768px) {
       flex-direction: row;
@@ -22,10 +23,17 @@
     }
   }
 
-  &__left-wrapper,
   &__middle-wrapper {
     flex: 1;
     margin: 0 20px;
+  }
+
+  &__left-wrapper {
+    flex: 1;
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   &__logo-link {
@@ -34,8 +42,11 @@
 
   &__left-body {
     font-size: 14px;
-    color: #6c757d;
+    color: #000;
     margin-bottom: 20px;
+    max-width: 257px;
+    width: 100%;
+    margin-top: 10px;
     @media (max-width: 768px) {
       margin-top: 20px;
     }
@@ -44,6 +55,7 @@
   &__left-bottom {
     font-size: 14px;
     color: #6c757d;
+    line-height: 18px;
     @media (max-width: 768px) {
       margin-bottom: 10px;
     }
@@ -96,7 +108,7 @@
 
     padding: 0;
     margin: 0;
-
+    margin-top: 10px;
     @media (min-width: 768px) {
       flex-direction: row;
       justify-content: space-between;

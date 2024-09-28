@@ -1,0 +1,14 @@
+.privacy {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  &__body {
+    font-family: Inter;
+    font-size: 16px;
+    color: #000;
+  }
+  &__add {
+    word-break: break-all;
+    /* Or you can use overflow-wrap */
+    overflow-wrap: break-word;
+  }
+}

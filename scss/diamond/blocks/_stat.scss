@@ -8,6 +8,12 @@
     font-weight: 500;
   }
 
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   @media (max-width: 768px) {
     padding-top: 50px;
   }
@@ -83,7 +89,7 @@
   }
 
   &__item {
-    max-width: 175px;
+    max-width: 310px;
     width: 100%;
     padding-left: 80px;
     margin-bottom: 36px;
@@ -165,8 +171,9 @@
 
   &__list {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
-    max-width: 570px;
+    max-width: 900px;
     width: 100%;
 
     @media (max-width: 768px) {
@@ -227,6 +234,7 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 110px;
+    width: 100%;
 
     @media (max-width: 768px) {
       flex-direction: column;

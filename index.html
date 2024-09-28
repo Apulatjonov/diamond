@@ -24,19 +24,19 @@
 
             <ul class="header__list">
               <li class="header__item">
-                <a href="#" class="header__item-link">Home</a>
+                <a href="#home" class="header__item-link">Home</a>
               </li>
               <li class="header__item">
-                <a href="#" class="header__item-link">About</a>
+                <a href="#about" class="header__item-link">About</a>
               </li>
               <li class="header__item">
-                <a href="#" class="header__item-link">Services</a>
+                <a href="#services" class="header__item-link">Services</a>
               </li>
               <li class="header__item">
-                <a href="#" class="header__item-link">Partners</a>
+                <a href="#partner" class="header__item-link">Partners</a>
               </li>
               <li class="header__item">
-                <a href="#" class="header__item-link">Contact</a>
+                <a href="#contact" class="header__item-link">Contact</a>
               </li>
             </ul>
 
@@ -46,10 +46,9 @@
                 alt="phone icon"
                 class="header__icon-img"
               />
-              <p class="header__u-body">
-                +1 (708) 51 51 518<br />
-                +1 (708) 51 51 518
-              </p>
+              <a href="tel:+15135923800" class="header__u-body"
+                >+1 (513) 592-3800</a
+              >
             </div>
           </div>
         </div>
@@ -57,7 +56,7 @@
     </header>
 
     <main class="main">
-      <section class="hero">
+      <section class="hero" id="home">
         <div class="container">
           <div
             class="hero__container"
@@ -82,7 +81,7 @@
         </div>
       </section>
 
-      <section class="stat">
+      <section class="stat" id="about">
         <div class="container">
           <div class="stat__container">
             <div class="stat__upper">
@@ -111,59 +110,62 @@
               </div>
             </div>
 
-            <div class="stat__bottom">
-              <div class="stat__wrapper"></div>
+            <ul class="stat__list" data-aos="fade-up" data-aos-duration="2000">
+              <li class="stat__item">
+                <h3 class="stat__item-header">Innovative Logistic Company</h3>
 
-              <ul
-                class="stat__list"
-                data-aos="fade-up"
-                data-aos-duration="2000"
-              >
-                <li class="stat__item">
-                  <h3 class="stat__item-header">Teamwork</h3>
+                <p class="stat__item-body">
+                  Diamond Inc is an innovative carrier company devoted to
+                  ensuring rapid delivery times for customers in America. We
+                  supply our high caliber truckers with state-of-the-art fleet
+                  that changes on a 24 month basis. All are equipped with
+                  transponders and E-logs to ensure your freight is delivered
+                  with as few time constraints as possible.
+                </p>
+              </li>
 
-                  <p class="stat__item-body">
-                    Our strong team of dispatchers are the best of the best,
-                    providing 24/7 trucking services.
-                  </p>
-                </li>
+              <li class="stat__item">
+                <h3 class="stat__item-header">24/7 Support and Safety</h3>
 
-                <li class="stat__item">
-                  <h3 class="stat__item-header">Safety</h3>
+                <p class="stat__item-body">
+                  Plus, drivers are never left in the dark, whether they’re
+                  behind the wheel or at home. At any time they need, they have
+                  a 24/7 logistics team to help with their reloads, deliveries,
+                  and safety.
+                </p>
+              </li>
 
-                  <p class="stat__item-body">
-                    Thousands of loads delivered securely, efficiently and
-                    on-time.
-                  </p>
-                </li>
+              <li class="stat__item">
+                <h3 class="stat__item-header">
+                  Opportunities For Team Members
+                </h3>
 
-                <li class="stat__item">
-                  <h3 class="stat__item-header">
-                    High <br />
-                    Grossing
-                  </h3>
+                <p class="stat__item-body">
+                  Transparency is at the heart of our company, and our drivers
+                  are more than just a number. We provide a wealth of
+                  opportunities for sustainable career growth for each member.
+                  Just ask our founder; he was a trucker himself and knows first
+                  hand the frustrations and feats many truckers face.
+                </p>
+              </li>
 
-                  <p class="stat__item-body">
-                    Drivers love working with us since we offer stable gross and
-                    monthly bonuses
-                  </p>
-                </li>
+              <li class="stat__item">
+                <h3 class="stat__item-header">Bonuses</h3>
 
-                <li class="stat__item">
-                  <h3 class="stat__item-header">Support</h3>
-
-                  <p class="stat__item-body">
-                    Safety and support of our employees are number1 concern of
-                    our company.
-                  </p>
-                </li>
-              </ul>
-            </div>
+                <p class="stat__item-body">
+                  It’s for this reason; he’s regularly providing insights and
+                  ways to help make Diamond team members feel appreciated. At
+                  present, truckers with us are entitled to advances, direct
+                  deposits, awards, vacation pay, referral programs, safety and
+                  performance bonuses, and more.
+                </p>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
 
-      <section class="partner">
+      <section class="partner" id="partner">
         <div class="container">
           <div class="partner__container">
             <div class="partner__wrapper">
@@ -196,13 +198,13 @@
                   data-aos="fade-up"
                   data-aos-duration="2000"
                 />
-                <img
+                <!-- <img
                   class="partner__img"
                   src="./img/partner5.png"
                   alt="Partner 5"
                   data-aos="fade-up"
                   data-aos-duration="2000"
-                />
+                /> -->
                 <img
                   class="partner__img"
                   src="./img/partner6.png"
@@ -210,7 +212,7 @@
                   data-aos="fade-up"
                   data-aos-duration="2000"
                 />
-                <img
+                <!-- <img
                   class="partner__img"
                   src="./img/CHRobinson-removebg-preview.png"
                   alt="Partner 6"
@@ -237,14 +239,14 @@
                   alt="Partner 6"
                   data-aos="fade-up"
                   data-aos-duration="2000"
-                />
+                /> -->
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="ribbon">
+      <section class="ribbon" id="services">
         <div class="container">
           <div class="ribbon__container">
             <p class="ribbon__body">DISPATCH</p>
@@ -310,8 +312,8 @@
 
               <div class="contact__wrapper">
                 <input
-                  class="contact__input"
                   type="tel"
+                  class="contact__input"
                   name="number"
                   id="number"
                   required
@@ -334,7 +336,7 @@
         </div>
       </section>
 
-      <section class="apply">
+      <section class="apply" id="contact">
         <div class="container">
           <div
             class="apply__container"
@@ -343,21 +345,21 @@
           >
             <div class="apply__wrapper">
               <h2 class="apply__header">Apply</h2>
-              <form class="apply__form">
+              <form class="apply__form" onsubmit="return sendTelegram();">
                 <div class="apply__main-wrapper">
                   <div class="apply__input-wrapper">
                     <input
                       type="text"
-                      name="fullName"
-                      id="fullName"
+                      name="FirstName"
+                      id="FirstName"
                       placeholder="Full name"
                       required
                       class="apply__input"
                     />
                     <input
                       type="email"
-                      name="email"
-                      id="email"
+                      name="EmailUser"
+                      id="EmailUser"
                       placeholder="E-mail"
                       required
                       class="apply__input"
@@ -375,62 +377,63 @@
                   <div class="apply__options">
                     <div class="apply__option-group">
                       <h3>Type of driver</h3>
-                      <label
-                        ><input
+                      <label>
+                        <input
                           type="radio"
                           name="driverType"
                           value="Owner Operator"
                           required
                         />
-                        Owner Operator</label
-                      >
-                      <label
-                        ><input
+                        Owner Operator
+                      </label>
+                      <label>
+                        <input
                           type="radio"
                           name="driverType"
                           value="Lease Operator"
                         />
-                        Lease Operator</label
-                      >
-                      <label
-                        ><input
+                        Lease Operator
+                      </label>
+                      <label>
+                        <input
                           type="radio"
                           name="driverType"
                           value="Company Driver"
                         />
-                        Company Driver</label
-                      >
+                        Company Driver
+                      </label>
                     </div>
                     <div class="apply__option-group">
                       <h3>Year of experience</h3>
-                      <label
-                        ><input
+                      <label>
+                        <input
                           type="radio"
                           name="experience"
-                          value="Less than 1 year"
+                          value="Less than 2 year"
                           required
                         />
-                        Less than 1 year</label
-                      >
-                      <label
-                        ><input
+                        Less than 2 year
+                      </label>
+                      <label>
+                        <input
                           type="radio"
                           name="experience"
-                          value="More than 1 year"
+                          value="More than 2 year"
                         />
-                        More than 1 year</label
-                      >
-                      <label
-                        ><input type="radio" name="experience" value="None" />
-                        None</label
-                      >
+                        More than 2 year
+                      </label>
+                      <label>
+                        <input type="radio" name="experience" value="None" />
+                        None
+                      </label>
                     </div>
                     <div class="apply__option-group">
                       <h3>Terms and Conditions</h3>
-                      <label
-                        ><input type="checkbox" name="terms" required /> I agree
-                        to the <a href="#">Terms and Conditions</a></label
-                      >
+                      <label>
+                        <input type="checkbox" name="terms" required />
+                        I agree to the
+                        <a href="./privacy.html">Terms and Conditions</a>
+                      </label>
                     </div>
                   </div>
                 </div>
@@ -444,7 +447,9 @@
                       name="cdl"
                       class="apply__file-input"
                       required
+                      onchange="showFileName()"
                     />
+                    <span id="file-name" class="file-name"></span>
                   </label>
                 </div>
 
@@ -469,27 +474,24 @@
                 <img src="./img/logo-footer.png" alt="Logo" />
               </a>
               <p class="footer__left-body">
-                Figma ipsum component variant main layer. Auto duplicate export
-                flows mask. Rotate selection share move distribute. Align
-                variant vector selection shadow. Font blur underline flows
-                community arrange device edit image arrange.
+                Diamond Inc is a North American logistics company. We provide a
+                wide range of logistic services.
               </p>
               <p class="footer__left-bottom">
-                A: 6/8 Wilmette Pl, Mona Vale <br />
-                NSW 2103 <br />
-                E: info@woodacademy.com <br />
-                P: 1800 888 888
+                A: 5546 Hamilton TRL, Liberty Twp, OH 45011 <br />
+                E:
+                <a href="mailto:diamondinorp1@gmail.com"
+                  >diamondinorp1@gmail.com</a
+                >
+                <br />
+                P: +1 (513) 592-3800
               </p>
             </div>
 
             <div class="footer__middle-wrapper">
-              <h3 class="footer__header">
-                Figma ipsum component variant main layer
-              </h3>
+              <h3 class="footer__header">Subscribe to news</h3>
               <p class="footer__body">
-                Figma ipsum component variant main layer. Slice scrolling move
-                bullet pencil subtract ellipse. Undo comment reesizing follower
-                flows pencil select ipsum.
+                Get updated about discounts, new vacant positions and more
               </p>
               <form class="footer__form">
                 <input
@@ -506,16 +508,16 @@
                 <li class="footer__main-item">
                   <ul class="footer__inner-list">
                     <li class="footer__inner-item">
-                      <a href="#" class="footer__inner-link">Home</a>
+                      <a href="#home" class="footer__inner-link">Home</a>
                     </li>
                     <li class="footer__inner-item">
-                      <a href="#" class="footer__inner-link">About</a>
+                      <a href="#about" class="footer__inner-link">About</a>
                     </li>
                     <li class="footer__inner-item">
-                      <a href="#" class="footer__inner-link">Partners</a>
+                      <a href="#partner" class="footer__inner-link">Partners</a>
                     </li>
                     <li class="footer__inner-item">
-                      <a href="#" class="footer__inner-link">Apply</a>
+                      <a href="#contact" class="footer__inner-link">Apply</a>
                     </li>
                   </ul>
                 </li>
@@ -525,21 +527,32 @@
                       <a href="#" class="footer__inner-link">Term of Use</a>
                     </li>
                     <li class="footer__inner-item">
-                      <a href="#" class="footer__inner-link">Privacy Policy</a>
+                      <a href="./privacy.html" class="footer__inner-link"
+                        >Privacy Policy</a
+                      >
                     </li>
                   </ul>
                 </li>
               </ul>
               <div class="footer__contact-wraper">
                 <div class="footer__social-wrapper">
-                  <a href="#" class="footer__social-link"
+                  <a
+                    href="https://instagram.com/diamondincorp"
+                    target="_blank"
+                    class="footer__social-link"
                     ><img src="./img/instagram.svg" alt="Instagram"
                   /></a>
-                  <a href="#" class="footer__social-link"
+                  <a
+                    href="https://www.facebook.com/profile.php?id=61563219774775"
+                    target="_blank"
+                    class="footer__social-link"
                     ><img src="./img/facebook.svg" alt="Facebook"
                   /></a>
-                  <a href="#" class="footer__social-link"
-                    ><img src="./img/twitter.svg" alt="Twitter"
+                  <a
+                    href="https://t.me/diamond_incorp"
+                    target="_blank"
+                    class="footer__social-link"
+                    ><img src="./img/iconoir_telegram.svg" alt="Twitter"
                   /></a>
                 </div>
               </div>
@@ -552,6 +565,8 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/telegram.js"></script>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
